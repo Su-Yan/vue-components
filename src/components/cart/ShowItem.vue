@@ -1,4 +1,14 @@
 <template>
+    <!--
+        该组件接收一个item对象，
+        该组件分为上下两栏，
+        上下两栏用横线隔开，
+        上面一栏分为左右两部分，左边左对齐放title，右边右对齐放一个加号图标，
+        下面一栏分为左中右三部分，
+            左边放一个圆圈，如果image为空，则为空圆圈图标，如果不为空，则显示一个绿色对号图标，
+            中间分为上中下三部分，上面放tag，中间放description，下面放"查看详情"，tag字号与查看详情相同，但比description小一号，
+            右边用于展示图片，默认只展示两张，可以为空
+    -->
     <div class="item-component">
         <div class="top-section">
             <p class="title">{{ props.item.projectCode }}</p>
@@ -43,9 +53,9 @@ function getPicPath(params: any) {
     flex-direction: column;
     border: 1px;
     border-radius: 10px;
-    padding: 1%;
+    padding: 0.3rem;
     background-color: white;
-    margin: 2% 2% 2% 2%;
+    margin: 0.5rem;
 }
 
 .top-section {
@@ -60,12 +70,12 @@ function getPicPath(params: any) {
 .bottom-section .left {
     display: flex;
     align-items: center;
-    margin-left: 2px;
-    margin-right: 4px;
+    margin-left: 0.2rem;
+    margin-right: 0.4rem;
 }
 
 .bottom-section .middle {
-    width: 55%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -122,7 +132,7 @@ function getPicPath(params: any) {
 .thumbnail {
     max-width: 3rem;
     height: auto;
-    margin-top: 2px;
-    margin-right: 2px;
+    margin-top: 0.1rem;
+    margin-right: 0.1rem;
 }
 </style>

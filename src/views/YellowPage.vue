@@ -2,6 +2,8 @@
     <div class="outside">
         <!--
         <ShowItem :item="item" :switchStatus="true"></ShowItem>
+        <ShowItem :item="item" :switchStatus="true"></ShowItem>
+        <ShowItem :item="item" :switchStatus="true"></ShowItem>
         -->
         <DefectDetail :item="item"></DefectDetail>
     </div>
@@ -18,7 +20,7 @@ const item = reactive({
         {
             "id": 1337,
             "testDefectId": 1316,
-            "attachmentName": "机器清单.xlsx",
+            "attachmentName": "机器清单.jpg",
             "attachmentUrl": "https://img2.baidu.com/it/u=256816879,771155532&fm=253&fmt=auto&app=120&f=JPEG?w=1204&h=800",
             "fileUploadTime": "2024-05-17 18:50:41",
             "createTime": "2024-05-17 18:50:52",
@@ -28,7 +30,7 @@ const item = reactive({
         {
             "id": 1337,
             "testDefectId": 1316,
-            "attachmentName": "机器清单.xlsx",
+            "attachmentName": "机器清单.jpg",
             "attachmentUrl": "https://img2.baidu.com/it/u=256816879,771155532&fm=253&fmt=auto&app=120&f=JPEG?w=1204&h=800",
             "fileUploadTime": "2024-05-17 18:50:41",
             "createTime": "2024-05-17 18:50:52",
@@ -38,7 +40,7 @@ const item = reactive({
         {
             "id": 1337,
             "testDefectId": 1316,
-            "attachmentName": "机器清单.xlsx",
+            "attachmentName": "机器清单.jpg",
             "attachmentUrl": "https://img2.baidu.com/it/u=256816879,771155532&fm=253&fmt=auto&app=120&f=JPEG?w=1204&h=800",
             "fileUploadTime": "2024-05-17 18:50:41",
             "createTime": "2024-05-17 18:50:52",
